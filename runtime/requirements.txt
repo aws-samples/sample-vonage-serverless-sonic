@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+websockets
+requests
+aws_sdk_bedrock_runtime
+smithy-aws-core
