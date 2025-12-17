@@ -1,4 +1,4 @@
-# Real-Time Voice Agent with Amazon Bedrock Nova Sonic
+# Serverless Telephony with Sonic and AgentCore Runtime
 
 by Reilly Manton
 
