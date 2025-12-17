@@ -1,5 +1,7 @@
 # Real-Time Voice Agent with Amazon Bedrock Nova Sonic
 
+by Reilly Manton
+
 A serverless voice agent that enables natural, interruptible phone conversations using Amazon Bedrock's Nova Sonic model and AWS AgentCore Runtime's bidirectional streaming capabilities.
 
 ## Overview
@@ -68,6 +70,11 @@ This enables:
 - Node.js and npm installed
 - Docker installed and running (for building the runtime container)
 
+### ### 2. Create a Vonage Application
+
+1. Create a Vonage application in the Vonage Dashboard and capture the `APPLICATION ID` from the Vonage console.
+2. Copy .env.template to a new file .env and add your vonage application ID.  
+
 ### 2. Deploy Infrastructure
 
 ```bash
@@ -80,7 +87,7 @@ cdk deploy
 
 After deployment, the CDK will output the API Gateway URLs. Configure your Vonage application:
 
-1. Create a Vonage application in the Vonage Dashboard
+1. Go to the vonage application page where you previously got your application ID.
 2. Set the **Answer URL** to the `AnswerUrl` output (e.g., `https://xxx.execute-api.us-east-1.amazonaws.com/vonage/answer`)
 3. Set the **Event URL** to the `EventUrl` output (e.g., `https://xxx.execute-api.us-east-1.amazonaws.com/vonage/event`)
 4. Set the **Fallback URL** to the `FallbackUrl` output (e.g., `https://xxx.execute-api.us-east-1.amazonaws.com/vonage/fallback`)
