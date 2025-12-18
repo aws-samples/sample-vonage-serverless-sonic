@@ -26,12 +26,12 @@ export class VonageAgentCoreStack extends cdk.Stack {
     // 2. Lambda Function for Vonage Webhooks
     // ========================================
     const apiFn = new lambda.Function(this, "VonageApiHandler", {
-      runtime: lambda.Runtime.PYTHON_3_12,
+      runtime: lambda.Runtime.PYTHON_3_14,
       architecture: lambda.Architecture.ARM_64,
       handler: "index.handler",
       code: lambda.Code.fromAsset(path.join(__dirname, "../../lambda/api"), {
         bundling: {
-          image: lambda.Runtime.PYTHON_3_12.bundlingImage,
+          image: lambda.Runtime.PYTHON_3_13.bundlingImage,
           platform: "linux/arm64",
           command: [
             "bash", "-c",

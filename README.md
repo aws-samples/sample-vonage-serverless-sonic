@@ -12,20 +12,12 @@ AgentCore Runtime's bidirectional streaming support enables natural, interruptib
 
 ## Architecture
 
-```
-Phone Call → Vonage Voice API → API Gateway (HTTP) → Lambda (Webhook Handler)
-                                                        ↓
-                                                   Generates presigned URL
-                                                        ↓
-             Vonage ← WebSocket Connection ← AgentCore Runtime → Nova Sonic
-                                                        ↓
-                                                   Audio Response
-```
+![Architecture Diagram](images/vonage-serverless-sonic.png)
 
 The application uses a two-tier architecture:
-
-1. **Lambda Webhook Handler**: Receives Vonage webhook calls and generates presigned WebSocket URLs for AgentCore Runtime
-2. **AgentCore Runtime**: Bridges Vonage's WebSocket audio stream (16kHz, 16-bit PCM) directly to Amazon Bedrock's Nova Sonic model
+H
+1. **Lambda URL Generator**: Receives Vonage answer requests and generates presigned WebSocket URLs for AgentCore Runtime
+2. **AgentCore Runtime WebSocket Bridge**: Bridges Vonage's WebSocket audio stream (16kHz, 16-bit PCM) directly to Amazon Bedrock's Nova Sonic model
 
 This enables:
 - Continuous audio input processing

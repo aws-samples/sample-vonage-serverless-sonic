@@ -22,6 +22,7 @@
   "dependencies": {
     "@aws-cdk/aws-bedrock-agentcore-alpha": "^2.232.2-alpha.0",
     "aws-cdk-lib": "^2.232.2",
+    "cdk-nag": "^2.37.55",
     "constructs": "^10.0.0",
     "dotenv": "^17.2.3"
   }
