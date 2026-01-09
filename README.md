@@ -2,7 +2,7 @@
 
 by Reilly Manton
 
-A serverless voice agent that enables natural, interruptible phone conversations using Amazon Bedrock's Nova Sonic model and AWS AgentCore Runtime's bidirectional streaming capabilities.
+A serverless contact center agent that enables natural conversations using Amazon Bedrock's Nova Sonic model and AWS AgentCore Runtime's bidirectional streaming capabilities.
 
 ## Overview
 
