@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI()
 
-MODEL_ID = "amazon.nova-sonic-v1:0"
+MODEL_ID = "amazon.nova-2-sonic-v1:0"
 REGION = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
 VOICE_ID = os.getenv("VOICE_ID", "tiffany")
 SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "You are a friendly phone assistant. Keep responses short and conversational.")
