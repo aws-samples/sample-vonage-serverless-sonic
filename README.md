@@ -6,7 +6,7 @@ A serverless voice agent that enables natural, interruptible phone conversations
 
 ## Overview
 
-This project demonstrates how to build a production-ready voice agent that handles phone calls through the Vonage Voice API, processing audio in real-time with Amazon Bedrock's Nova Sonic model.
+This project demonstrates how to build a voice agent that handles phone calls through the Vonage Voice API, processing audio in real-time with Amazon Bedrock's Nova Sonic model.
 
 AgentCore Runtime's bidirectional streaming support enables natural, interruptible conversations over WebSocket connections. Previously, connecting Nova Sonic to voice APIs over the phone required managing EC2, ECS, or EKS infrastructure to handle the WebSocket connections. AgentCore Runtime provides a serverless, purpose-built agent runtime environment that manages these voice API connections without requiring container orchestration or server provisioning.
 
