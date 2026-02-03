@@ -157,7 +157,7 @@ The runtime uses the following defaults (hardcoded in `runtime/index.py`):
 To customize these, modify the values in `runtime/index.py`:
 
 ```python
-MODEL_ID = "amazon.nova-sonic-v1:0"
+MODEL_ID = "amazon.nova-2-sonic-v1:0"
 REGION = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
 VOICE_ID = os.getenv("VOICE_ID", "tiffany")
 SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", "You are a friendly phone assistant. Keep responses short and conversational.")
